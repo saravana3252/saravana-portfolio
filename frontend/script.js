@@ -33,8 +33,9 @@ function handleSubmit(event){
     let email = document.getElementById("email").value
     let subject =document.getElementById("subject").value
     let message = document.getElementById("message").value
-
-
+    let submitBtn=document.getElementById("submitBtn")
+    let originalText=submitBtn.textContent;
+    submitBtn.textContent="sending...";
     let formData = {
         email:email,
         subject:subject,
@@ -56,6 +57,7 @@ function handleSubmit(event){
         }
     }).then((response)=>response.json()).then((data)=>{
         Notiflix.Notify.success('Email sent!');
+        submitBtn.textContent=originalText;
         document.getElementById("email").value=""
         document.getElementById("subject").value=""
         document.getElementById("message").value=""
