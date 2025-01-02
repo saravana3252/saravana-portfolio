@@ -1,6 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer")
 const cors =require("cors")
+require("dotenv")
 
 const app =express();
 exports.app = app;
@@ -15,7 +16,7 @@ app.post("/contact",(req,res)=>{
         service:"gmail",
         auth:{
             user:"sara18ec118@gmail.com",
-            pass:"skwk leez pbzz wlwf",
+            pass:process.env.GMAIL_PASS,
         }
     })
     
@@ -38,7 +39,7 @@ app.post("/contact",(req,res)=>{
     })
 })
 
-
+const PORT = process.env.PORT || 8000;
 app.listen("8000",()=>{
-    console.log("server connected")
+    console.log(`server connected on ${PORT}`)
 })
