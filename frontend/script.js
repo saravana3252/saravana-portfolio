@@ -48,7 +48,7 @@ function handleSubmit(event){
           fontWeight: 'bold',   
         }
     })
-    fetch("http://localhost:8000/contact",{
+    fetch("https://saravana-portfolio-d44v.onrender.com/contact",{
         method:"POST",
         body:JSON.stringify(formData),
         headers:{
