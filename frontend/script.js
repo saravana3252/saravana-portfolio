@@ -24,7 +24,7 @@ function toggleMenu(){
 }
 
 function closeMenu(){
-    document.getElementById("mobile").style.right="-500px"
+    document.getElementById("mobile").style.right="-50%"
 }
 
 

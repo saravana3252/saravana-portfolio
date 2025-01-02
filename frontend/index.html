@@ -27,7 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-3.2.6.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="overflow-x-hidden">
+  <body >
     <div class="relative w-full h-5/6 p-2 bg-gray-800">
       <div
         class="w-full h-20 bg-gray-800 text-white font-bold flex items-center lg:px-10 px-2 justify-between"
@@ -57,19 +57,19 @@
 
         <div
           id="mobile"
-          class="flex flex-col gap-5 h-screen absolute top-0 z-50 -right-[500px] bg-orange-600 items-center cursor-pointer w-[50%] lg:w-[25%] py-5 lg:py-0 transition-all duration-700 lg:hidden"
+          class="flex flex-col gap-5 h-screen fixed top-0 z-50 -right-[50%] bg-orange-600 items-center cursor-pointer w-[50%] lg:w-[25%] py-5 lg:py-0 transition-all duration-700 lg:hidden"
         >
           <button class="border border-white p-2 px-4" onclick="closeMenu()">
             X
           </button>
           <a href="https://github.com/saravana3252" target="_blank"
-            ><i class="fa-brands fa-github fa-2x"></i
+            ><i class="fa-brands fa-github fa-2x text-black"></i
           ></a>
           <a href="https://www.linkedin.com/in/saravanakp026/" target="_blank"
-            ><i class="fa-brands fa-linkedin fa-2x"></i
+            ><i class="fa-brands fa-linkedin fa-2x  text-black"></i
           ></a>
           <a href="https://www.instagram.com/saravana._2k/" target="_blank"
-            ><i class="fa-brands fa-instagram fa-2x"></i
+            ><i class="fa-brands fa-instagram fa-2x  text-black"></i
           ></a>
           <button
             class="lg:bg-orange-600 bg-black p-2 px-4 rounded-md text-white font-poppins"
@@ -102,9 +102,9 @@
       <div
         class="w-full grid grid-cols-1 lg:grid-cols-2 lg:mt-20 mt-5 font-poppins"
       >
-        <div class="py-10 pl-10 lg:pl-20 ">
+        <div class="py-10  lg:pl-20 text-center lg:text-start">
           <p class="text-white">I AM</p>
-          <p class="text-orange-600 font-bold text-5xl font-poppins">
+          <p class="text-orange-600 font-bold text-4xl lg:text-5xl font-poppins">
             saravana kumar p
           </p>
           <p class="text-white mt-3">MERN STACK DEVELOPER</p>
@@ -115,9 +115,9 @@
             Talk To Me
           </button>
         </div>
-        <div class="relative h-56 flex justify-center">
+        <div class="relative h-56 flex justify-center p-5">
            <img class="h-full bg-yellow-600 absolute z-10" src="https://png.pngtree.com/png-vector/20231018/ourmid/pngtree-business-portfolio-3d-character-illustration-png-image_10204176.png"/>
-           <div id="profileImg" class="flex justify-center h-56 w-[40%] bg-yellow-200">
+           <div id="profileImg" class="flex justify-center h-56 lg:w-[40%] w-[50%]  bg-yellow-200">
           </div>
         </div>
       </div>
@@ -148,10 +148,10 @@
           </div>
         </div>
       </div>
-      <div class="w-full bg-gray-600 flex justify-center py-5">
+      <div class="w-full bg-gray-600 flex justify-center py-5 ">
         <div
           id="profile"
-          class="w-[90%] bg-gray-700 p-5 mt-10 grid lg:grid-cols-2 grid-cols-1 gap-5 rounded"
+          class="w-[90%] bg-gray-700 lg:p-5 p-3 mt-10 grid lg:grid-cols-2 grid-cols-1 gap-5  rounded"
           style="display:grid"
         >
           <div class="py-3 px-5 bg-gray-800">
@@ -166,7 +166,7 @@
           </div>
           <div class="bg-gray-800 p-4">
             <p class="font-bold text-white text-xl">Skills</p>
-            <div class="grid md:grid-cols-4 grid-cols-3 text-center gap-4 mt-2">
+            <div class="grid md:grid-cols-4 grid-cols-2 text-center gap-4 mt-2">
               <p class="bg-orange-600 text-white p-2 rounded-md">Html</p>
               <p class="bg-orange-600 text-white p-2 rounded-md">Css</p>
               <p class="bg-orange-600 text-white p-2 rounded-md">Bootstrap</p>
@@ -397,7 +397,7 @@
           <div class="flip-card-front bg-gray-800 p-2">
             <img src="./images/WEATHERAPP.png" />
             <div
-              class="grid grid-cols-4 gap-1 text-center items-center text-orange-500 mt-2 px-1"
+              class="grid grid-cols-3 gap-1 text-center items-center text-orange-500 mt-2 px-1"
             >
               <p class="bg-gray-700 p-1 py-2">react</p>
               <p class="bg-gray-700 p-1 py-2">tailwind</p>
@@ -442,7 +442,7 @@
           <div class="flip-card-front bg-gray-800 p-2">
             <img src="./images/IMAGE GALLERY.png" />
             <div
-              class="grid grid-cols-4 gap-1 text-center items-center text-orange-500 mt-2 px-1"
+              class="grid grid-cols-3 gap-1 text-center items-center text-orange-500 mt-2 px-1"
             >
               <p class="bg-gray-700 p-1 py-2">react</p>
               <p class="bg-gray-700 p-1 py-2">tailwind</p>
@@ -486,7 +486,7 @@
           <div class="flip-card-front bg-gray-800 p-2">
             <img src="./images/GREENDEN.png" />
             <div
-              class="grid grid-cols-4 gap-1 text-center items-center text-orange-500 mt-2 px-1"
+              class="grid grid-cols-3 gap-1 text-center items-center text-orange-500 mt-2 px-1"
             >
               <p class="bg-gray-700 p-1 py-2">javascript</p>
               <p class="bg-gray-700 p-1 py-2">tailwind</p>
@@ -529,7 +529,7 @@
           <div class="flip-card-front bg-gray-800 p-2">
             <img src="./images/QUIZ APP.png" />
             <div
-              class="grid grid-cols-4 gap-1 text-center items-center text-orange-500 mt-2 px-1"
+              class="grid grid-cols-3 gap-1 text-center items-center text-orange-500 mt-2 px-1"
             >
               <p class="bg-gray-700 p-1 py-2">javascript</p>
               <p class="bg-gray-700 p-1 py-2">tailwind</p>
