@@ -63,3 +63,7 @@ function handleSubmit(event){
         console.log(err)
     })
 }
+
+function downloadCV(){
+    window.location.href = "resume/saravana_kumar_p.pdf";
+}
