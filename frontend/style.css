@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+#profileImg{
+    transform:rotateZ(45deg)
+}
+
+#profileImg > img{
+    transform:rotateZ(0deg)
+}
+
+
+.flip-card {
+    perspective: 1000px;
+    width: 100%;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+
+  
