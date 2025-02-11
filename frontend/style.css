@@ -5,6 +5,19 @@
   transform: rotateZ(45deg);
 }
 
+/* 
+@media only screen and (min-width:391px) and (max-width:421px){
+  .flip-card1{
+    margin-top: 5px; 
+  }
+} */
+
+/* @media (max-width:390px){
+  .flip-card1{
+    margin-top: 1px;
+  }
+} */
+
 @media (max-width: 500px) {
   #profileImg {
     transform: rotateZ(35deg);
